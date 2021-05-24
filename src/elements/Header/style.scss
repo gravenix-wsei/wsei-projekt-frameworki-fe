@@ -1,6 +1,20 @@
 @import './../../vars/global.scss';
 
-header {
+header.navbar {
     color: $main-color;
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    div.logo {
+        width: 32px;
+    }
+    div.navbar-dropdown {
+        flex-grow: 2;
+    }
+    div.searchbar {
+        flex-grow: 6;
+    }
+    div.right-header {
+        flex-grow: 3;
+    }
 }
