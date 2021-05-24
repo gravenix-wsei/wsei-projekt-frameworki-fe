@@ -5,16 +5,22 @@ header.navbar {
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
+    padding: 0 $margin-small;
+    box-shadow: 0 $margin-small/2 $margin-small $secondary-color;
+    height: $navbar-height;
     div.logo {
-        width: 32px;
+        width: $navbar-height;
     }
     div.navbar-dropdown {
         flex-grow: 2;
+        margin: auto;
     }
     div.searchbar {
         flex-grow: 6;
     }
     div.right-header {
         flex-grow: 3;
+        text-align: right;
+        margin: auto;
     }
 }

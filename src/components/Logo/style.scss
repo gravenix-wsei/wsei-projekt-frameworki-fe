@@ -1,5 +1,7 @@
+@import '../../vars/global.scss';
+
 img.logo-image {
     position: relative;
     left: 0; top: 0;
-    height: 32px;
+    height: $navbar-height;
 }

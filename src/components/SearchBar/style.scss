@@ -1,3 +1,7 @@
+@import '../../vars/global.scss';
+
 input.searchbar-input {
-    width: 100%;
+    width: calc(100% - 2px*2 - 4px);
+    height: $navbar-height/2 - 4px;
+    margin: $margin-small 2px;
 }
