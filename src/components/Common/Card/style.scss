@@ -1,0 +1,11 @@
+@import '../../../vars/global.scss';
+
+$half-small-margin: $margin-small/2;
+
+div.card {
+    box-shadow: 1px $half-small-margin $half-small-margin $secondary-color;
+    border-radius: 10px;
+    padding: $margin-small;
+    margin: $margin-small;
+    border: 1px solid $secondary-color-light;
+}

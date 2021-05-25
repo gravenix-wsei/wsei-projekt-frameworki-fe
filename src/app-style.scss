@@ -1,0 +1,13 @@
+@import './vars/global.scss';
+
+div.content {
+    display: flex;
+    align-items: flex-start;
+    & > :nth-child(1) {
+        flex-grow: 1;
+        padding: $margin-small;
+    }
+    & > :nth-child(2) {
+        flex-grow: 9;
+    }
+}

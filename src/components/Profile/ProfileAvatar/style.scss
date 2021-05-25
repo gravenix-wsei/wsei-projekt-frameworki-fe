@@ -1,0 +1,11 @@
+//TODO: maybe it should be in global.scss
+$avatar-size: 150px;
+
+div.profile-avatar {
+    height: $avatar-size;
+    text-align: center;
+    & > img {
+        height: 100%;
+        border-radius: 50%;
+    }
+}

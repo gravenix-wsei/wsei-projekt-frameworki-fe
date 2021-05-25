@@ -1,0 +1,8 @@
+@import '../../../vars/global.scss';
+
+div.separator {
+    height: 0;
+    width: 100%;
+    border-bottom: 2px solid $secondary-color;
+    margin: $margin-small 0;
+}

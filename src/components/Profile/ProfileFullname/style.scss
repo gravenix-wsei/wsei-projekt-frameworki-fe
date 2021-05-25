@@ -1,0 +1,12 @@
+@import '../../../vars/global.scss';
+
+span.profile-fullname{
+    display: block;
+    width: 100%;
+    margin: $margin-small 0;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: 105%;
+    color: $main-color;
+}
