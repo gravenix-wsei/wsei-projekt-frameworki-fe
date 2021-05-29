@@ -1,11 +1,11 @@
-import React from 'react';
-import {Component} from 'react';
+import React, { Component }  from 'react';
+import LatestPublications from '../../components/Page/LatestPublications';
 import './style.scss';
 
 class Page extends Component {
     render() {
         return (<main>
-            <p>Tutaj content</p>
+            <LatestPublications />
         </main>);
     }
 }

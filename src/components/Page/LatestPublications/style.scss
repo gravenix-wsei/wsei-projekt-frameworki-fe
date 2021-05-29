@@ -1,0 +1,16 @@
+@import '../../../vars/global.scss';
+
+.card.latest-publications-card {
+    img.image-preview {
+        height: 100%;
+        width: 20%;
+        object-fit: cover;
+        position: relative;
+        float: left;
+    }
+    & > h1 {
+        line-height: 20px;
+        font-size: 16px;
+        color: $secondary-color-dark;
+    }
+}
