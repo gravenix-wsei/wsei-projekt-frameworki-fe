@@ -1,1 +1,5 @@
-$color: #eee;
+@import '../../vars/global.scss';
+
+main > h2 { 
+    color: $secondary-color-dark;
+}
