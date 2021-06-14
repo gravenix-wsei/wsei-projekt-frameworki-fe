@@ -3,3 +3,10 @@
 main > h2 { 
     color: $secondary-color-dark;
 }
+
+@for $count from 1 through 12 {
+    .col-#{$count} {
+        width: 100% / $count;
+        display: inline-block;
+    }
+}
