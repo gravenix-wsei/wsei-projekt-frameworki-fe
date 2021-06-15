@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import getImageFromName from '../../utils/IconHelper';
 
-class Icon extends Component<{name: string}>
+type Props = {
+    name: string,
+    className?: string,
+}
+
+class Icon extends Component<Props>
 {
     render() {
-        return (<img src={this.props.name} alt={this.props.name} />);
+        return (<img className={this.props.className} src={getImageFromName(this.props.name)} alt={this.props.name} />);
     }
 }
 

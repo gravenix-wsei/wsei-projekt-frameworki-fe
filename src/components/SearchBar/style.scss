@@ -1,7 +1,17 @@
 @import '../../vars/global.scss';
 
-input.searchbar-input {
-    width: calc(100% - 2px*2 - 4px);
-    height: $navbar-height/2 - 4px;
-    margin: $margin-small 2px;
+.searchbar-container {
+    position: relative;
+    input.searchbar-input {
+        width: calc(100% - 2px*2 - 4px);
+        height: $navbar-height/2 - 4px;
+        margin: $margin-small 2px;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        transform: translateY(75%);
+    }
 }

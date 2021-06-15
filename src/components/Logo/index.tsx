@@ -4,7 +4,7 @@ import './style.scss';
 class Logo extends Component
 {
     render() { 
-        return (<img className="logo-image" src="./img.jpg" alt="Logo" />);
+        return (<img className="logo-image" src="/img/logo.png" alt="Logo" />);
     }
 }
 

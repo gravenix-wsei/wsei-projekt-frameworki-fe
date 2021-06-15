@@ -16,20 +16,20 @@ class LeftPanel extends React.Component {
                 <ProfileShortDesc>Aspirujący Kapitan Gwiezdnej Floty</ProfileShortDesc>
                 <Separator />
                 <Link to="where">
-                    <TextWithIcon icon="network">Your Network</TextWithIcon>
+                    <TextWithIcon icon="YourNetwork">Your Network</TextWithIcon>
                 </Link>
                 <Link to="where">
-                    <TextWithIcon icon="network">Your Publications</TextWithIcon>
+                    <TextWithIcon icon="YourPublications">Your Publications</TextWithIcon>
                 </Link>
             </Card>
             <Link to="where">
-                <TextWithIcon icon="network">Publications</TextWithIcon>
+                <TextWithIcon icon="Publications">Publications</TextWithIcon>
             </Link>
             <Link to="where">
-                <TextWithIcon icon="network">Ecosystem</TextWithIcon>
+                <TextWithIcon icon="Ecosystem">Ecosystem</TextWithIcon>
             </Link>
             <Link to="where">
-                <TextWithIcon icon="network">Entities</TextWithIcon>
+                <TextWithIcon icon="Entities">Entities</TextWithIcon>
             </Link>
         </section>);
     }
