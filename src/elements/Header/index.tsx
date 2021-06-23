@@ -11,11 +11,13 @@ class Main extends Component {
     private getOptions = () => [
         {
             id: 1,
-            name: "Home"
+            name: "Home",
+            icon: "Home",
         },
         {
             id: 2,
-            name: "My Account"
+            name: "My Account",
+            icon: "User",
         }
     ]
 
@@ -26,7 +28,7 @@ class Main extends Component {
                     <Logo />
                 </div>
                 <div className="navbar-dropdown">
-                    <Dropdown withIcon={true} icon="Home" options={this.getOptions()} />
+                    <Dropdown withIcon={true} icon="Home" options={this.getOptions()} selectedOption={0} />
                 </div>
                 <div className="searchbar">
                     <SearchBar />
