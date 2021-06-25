@@ -4,5 +4,32 @@
     width: 30%;
 }
 
-// TODO style this
-
+.workspaces {
+    width: 100%;
+    position: relative;
+    .workspace-container {
+        box-sizing: border-box;
+        padding: 0 30px;
+        width: 100%;
+        .workspace-container-inner {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: hidden;
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 48px;
+        cursor: pointer;
+        &.arrow-left {
+            //nth
+        }
+        &.arrow-right {
+            right: 0;
+        }
+    }
+}

@@ -1,8 +1,34 @@
 {
-    "posts": [
+    "workspaces": [
         {
-            "title": "test",
-            "id": "1"
+            "title": "Test Workspace",
+            "type": "Contract",
+            "users": "125",
+            "lastUpdated": "2021-06-25"
+        },
+        {
+            "title": "Test Workspace 2",
+            "type": "Contract",
+            "users": "1000",
+            "lastUpdated": "2021-06-05"
+        },
+        {
+            "title": "Test Workspace 3",
+            "type": "Contract",
+            "users": "25",
+            "lastUpdated": "2021-06-25"
+        },
+        {
+            "title": "Test Workspace 4",
+            "type": "Contract",
+            "users": "30",
+            "lastUpdated": "2021-04-25"
+        },
+        {
+            "title": "Test Workspace 5",
+            "type": "Contract",
+            "users": "12",
+            "lastUpdated": "2020-02-14"
         }
     ]
 }

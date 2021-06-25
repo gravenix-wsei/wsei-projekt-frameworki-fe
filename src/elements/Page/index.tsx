@@ -19,14 +19,14 @@ class Page extends Component<{}, StateProps> {
     }
 
     componentDidMount() {
-        getWorkspaces().then((workspaces: any) => this.setState({workspaces: workspaces}));
+        getWorkspaces().then((workspaces: Workspace[]) => this.setState({workspaces: workspaces}));
     }
 
     render() {
         return (<main>
             <LatestPublications />
             <h2>Workspaces</h2>
-            <Workspaces />
+            <Workspaces workspaces={this.state.workspaces}/>
             <YourWork />
         </main>);
     }
