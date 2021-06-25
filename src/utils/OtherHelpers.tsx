@@ -3,6 +3,9 @@ const getDaysAgo = (date :Date): number => {
     return milisecondsDiff/(1000*60*60*24);
 }
 
+const escapeRegExpChars = (str :string) => str.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+
 export {
     getDaysAgo,
+    escapeRegExpChars,
 };

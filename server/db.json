@@ -30,5 +30,61 @@
             "users": "12",
             "lastUpdated": "2020-02-14"
         }
+    ],
+    "your-work": [
+        {
+            "title": "Example work item #1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2021-06-10"
+        },
+        {
+            "title": "Example work item #2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2020-02-14"
+        },
+        {
+            "title": "Another example work item #3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2020-02-01"
+        },
+        {
+            "title": "Test Item",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2021-03-12"
+        },
+        {
+            "title": "Another great company wants to fuse with us",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2021-06-21"
+        },
+        {
+            "title": "Niech każdy student zda sesję <3",
+            "description": "Ciebie prosimy, wysłuchaj nas panie!",
+            "type": "Individual",
+            "lastUpdated": "2021-07-01"
+        },
+        {
+            "title": "There is more to come",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2021-06-21"
+        },
+        {
+            "title": "Recruitment for new Project Manager",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "type": "Corporate",
+            "lastUpdated": "2021-06-01"
+        },
+        {
+            "title": "The last item on this list",
+            "description": "It was very hard to find out how to describe these. But hopefully I've managed to succeed",
+            "type": "Corporate",
+            "lastUpdated": "2021-06-21"
+        }
     ]
 }

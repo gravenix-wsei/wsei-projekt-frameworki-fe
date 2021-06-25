@@ -2,24 +2,28 @@ import React, { Component }  from 'react';
 import LatestPublications from '../../components/Page/LatestPublications';
 import Workspaces from '../../components/Page/Workspaces';
 import YourWork from '../../components/Page/YourWork';
-import { getWorkspaces } from '../../utils/ApiHelper';
+import { getWorkspaces, getYourWork } from '../../utils/ApiHelper';
 import Workspace from '../../commonTypes/Workspace';
 import './style.scss';
+import WorkItem from '../../commonTypes/WorkItem';
 
 type StateProps = {
-    workspaces: Workspace[]
+    workspaces: Workspace[],
+    workItems: WorkItem[],
 }
 
 class Page extends Component<{}, StateProps> {
     constructor(props :{}) {
         super(props);
         this.state = {
-            workspaces: []
+            workspaces: [],
+            workItems: [],
         }
     }
 
     componentDidMount() {
         getWorkspaces().then((workspaces: Workspace[]) => this.setState({workspaces: workspaces}));
+        getYourWork().then((workItems: WorkItem[]) => this.setState({workItems: workItems}));
     }
 
     render() {
@@ -27,7 +31,7 @@ class Page extends Component<{}, StateProps> {
             <LatestPublications />
             <h2>Workspaces</h2>
             <Workspaces workspaces={this.state.workspaces}/>
-            <YourWork />
+            <YourWork workItems={this.state.workItems} />
         </main>);
     }
 }

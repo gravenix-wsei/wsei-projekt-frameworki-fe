@@ -1,0 +1,22 @@
+@import '../../../../vars/global.scss';
+
+div.worklist {
+    width: 100%;
+    & > div.worklist-pagination {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        font-size: 120%;
+        margin-bottom: 20px;
+        & > div.paginate-item {
+            display: inline-block;
+            width: 15px;
+            & > a.disabled {
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

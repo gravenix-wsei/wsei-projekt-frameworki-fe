@@ -1,5 +1,4 @@
 import axios from 'axios';
-import Workspace from '../commonTypes/Workspace';
 
 const BASE_URL = 'http://localhost:3333/api';
 
@@ -14,14 +13,11 @@ const handleRequest = (request :Promise<any>) =>
     
 
 
-const getWorkspaces = () => handleRequest(
-    axios.get(buildUrl('workspaces'))).then(
-        (data :any) => {
-            data.lastUpdated = new Date(data.lastUpdated);
-            return data as Workspace[];
-        }
-);
+const getWorkspaces = () => handleRequest(axios.get(buildUrl('workspaces')));
+
+const getYourWork = () => handleRequest(axios.get(buildUrl('your-work')));
 
 export {
-    getWorkspaces
+    getWorkspaces,
+    getYourWork,
 }
