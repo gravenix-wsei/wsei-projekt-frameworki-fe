@@ -4,10 +4,11 @@ import Article from '../../../commonTypes/Article';
 import PublicationMiniature from '../PublicationMiniature';
 import ImageWithPreview from '../ImageWithPreview';
 import './style.scss';
+import { getPublications } from '../../../utils/ApiHelper';
 
 type State = {
     currentPublication: number,
-    publications: Article[]
+    publications: Article[]|null
 }
 
 type Props = {
@@ -20,41 +21,28 @@ class LatestPublications extends Component<Props, State>
         super(props);
         this.state = {
             currentPublication: 1,
-            publications: [ // TODO download from endpoint
-                {
-                    title: 'An article 1',
-                    description: 'Lorem ipsum dolor mit samed',
-                    date: new Date('2021-05-23'),
-                    author: 'John Doe',
-                    image: 'img/buildings.png'
-                },
-                {
-                    title: 'An article 2',
-                    description: 'Lorem ipsum dolor mit samed',
-                    date: new Date('2021-05-02'),
-                    author: 'John Doe',
-                    image: 'img/buildings2.png'
-                },
-                {
-                    title: 'An article 3',
-                    description: 'Lorem ipsum dolor mit samed',
-                    date: new Date('2021-05-01'),
-                    author: 'John Doe',
-                    image: 'img/work.png'
-                },
-            ]
+            publications: null,
         };
     }
 
+    componentDidMount() {
+        getPublications().then((publications) => this.setState({publications: publications}));
+    }
+
+    private getPublications = () => this.state.publications ?? [];
+
     private renderMiniatures = () => <React.Fragment>
-        {this.state.publications.map((publication: Article) => <PublicationMiniature data={publication} />)}
+        {this.getPublications().map((publication: Article) => <PublicationMiniature data={publication} />)}
     </React.Fragment>
 
     render () {
+      let currentPublication = this.getPublications()[this.state.currentPublication] ?? {};
       return <Card className="latest-publications-card">
-          <ImageWithPreview imageUrl={this.state.publications[this.state.currentPublication].image}/>
+          {currentPublication && <ImageWithPreview imageUrl={currentPublication.image}/>}
           <h1>Latest Publications</h1>
-          {this.renderMiniatures()}
+          <div className="publications-container">
+            {this.renderMiniatures()}
+          </div>
           <span>See more publications...</span>
       </Card>
     }

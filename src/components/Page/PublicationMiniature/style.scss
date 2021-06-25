@@ -1,3 +1,5 @@
+@import '../../../vars/global.scss';
+
 div.publication-miniature {
     margin: 2px 0;
     img {
@@ -11,6 +13,10 @@ div.publication-miniature {
     }
     p {
         margin: 2px 0 8px 0;
+    }
+    & > div {
+        font-size: 80%;
+        color: $secondary-color-dark;
     }
 }
 

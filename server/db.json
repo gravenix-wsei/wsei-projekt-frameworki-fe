@@ -97,5 +97,28 @@
         "profileImage": "img/avatar.png",
         "fullName": "Michał Głuś",
         "shortDescription": "Aspirujący Kapitan Gwiezdnej Floty"
-    }
+    },
+    "publications": [
+        {
+            "title": "An article 1",
+            "description": "Lorem ipsum dolor mit samed",
+            "date": "2021-05-23",
+            "author": "John Doe",
+            "image": "img/buildings.png"
+        },
+        {
+            "title": "An article 2",
+            "description": "Lorem ipsum dolor mit samed",
+            "date": "2021-05-02",
+            "author": "John Doe",
+            "image": "img/buildings2.png"
+        },
+        {
+            "title": "An article 3",
+            "description": "Lorem ipsum dolor mit samed",
+            "date": "2021-05-01",
+            "author": "John Doe",
+            "image": "img/work.png"
+        }
+    ]
 }

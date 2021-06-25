@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Article from '../../../commonTypes/Article';
+import { getDaysAgo } from '../../../utils/OtherHelpers';
 import './style.scss';
 
 type Props = {
@@ -15,8 +16,8 @@ class PublicationMiniature extends Component<Props>
           <h2>{this.props.data.title}</h2>
           <p>{this.props.data.description}</p>
           <div>
-              <span>{this.props.data.date.toLocaleDateString()}</span>
-              <span>{this.props.data.author}</span>
+              <span>Added {getDaysAgo(this.props.data.date)} days ago</span>
+              <span> by {this.props.data.author}</span>
           </div>
       </div>);
     }
