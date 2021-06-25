@@ -26,21 +26,21 @@ class LatestPublications extends Component<Props, State>
                     description: 'Lorem ipsum dolor mit samed',
                     date: new Date('2021-05-23'),
                     author: 'John Doe',
-                    image: 'img1.png'
+                    image: 'img/buildings.png'
                 },
                 {
                     title: 'An article 2',
                     description: 'Lorem ipsum dolor mit samed',
                     date: new Date('2021-05-02'),
                     author: 'John Doe',
-                    image: 'img1.png'
+                    image: 'img/buildings2.png'
                 },
                 {
                     title: 'An article 3',
                     description: 'Lorem ipsum dolor mit samed',
                     date: new Date('2021-05-01'),
                     author: 'John Doe',
-                    image: 'img1.png'
+                    image: 'img/work.png'
                 },
             ]
         };

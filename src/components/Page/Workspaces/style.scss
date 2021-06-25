@@ -1,9 +1,6 @@
 @import '../../../vars/global.scss';
 
-.card.workspace-item {
-    flex: 0 0 24%;
-    width: 24%;
-}
+
 
 .workspaces {
     width: 100%;
@@ -18,6 +15,42 @@
             flex-direction: row;
             flex-wrap: nowrap;
             overflow-x: hidden;
+            .card.workspace-item {
+                flex: 0 0 24%;
+                width: 24%;
+                padding: 0;
+                overflow: hidden;
+                position: relative;
+                & > img.background {
+                    width: 100%;
+                }
+                & > img.edit {
+                    width: 25%;
+                    position: absolute;
+                    z-index: 1;
+                    top: 70px;
+                    left: 35px;
+                    box-shadow: #444 6px 3px 10px 3px;
+                }
+                & > div {
+                    padding: 0 4px;
+                    & > span{
+                        display: inline-block;
+                        margin: 0 5px;
+                        vertical-align: middle;
+                        & > img {
+                            display: inline-block;
+                            height: 15px;
+                        }
+                        &:last-of-type {
+                            display: block;
+                            color: $secondary-color-dark;
+                            margin: 0;
+                            font-size: 75%;
+                        }
+                    }
+                }
+            }
         }
     }
     .arrow {
@@ -34,3 +67,4 @@
         }
     }
 }
+

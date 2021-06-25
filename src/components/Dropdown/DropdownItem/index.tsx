@@ -12,7 +12,7 @@ class DropdownItem extends Component<PropsType>
     render () {
       return <div className="dropdown-item">
           <Icon name={this.props.icon} />
-          {this.props.name}
+          <span>{this.props.name}</span>
       </div>;
     }
 }

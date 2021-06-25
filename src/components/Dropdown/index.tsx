@@ -1,5 +1,4 @@
 import React, { Component, MouseEvent } from 'react';
-import Icon from '../Icon';
 import SearchBar from '../SearchBar';
 import DropdownItem from './DropdownItem';
 import './style.scss';
@@ -60,10 +59,14 @@ class Dropdown extends Component<DropdownProps, StateProps>
 
     render() {
         let {props, state} = this;
+        let selectedOption = state.selectedOption !== null ? props.options[state.selectedOption] : null;
         return (<div className="dropdown" onClick={this.onDropdownClick} onMouseLeave={this.onMouseLeave}>
-            {this.props.withIcon && <Icon name={this.props.icon || ''} />}
-            <div>
-                {state.selectedOption === null ? '' : props.options[state.selectedOption].name}
+            <div className="dropdown-current">
+                {selectedOption && <DropdownItem 
+                    name={selectedOption.name}
+                    id={selectedOption.id}
+                    icon={props.icon ?? ''}
+                />}
             </div>
             {state.dropdownVisible &&
                 <div className="dropdown-list">

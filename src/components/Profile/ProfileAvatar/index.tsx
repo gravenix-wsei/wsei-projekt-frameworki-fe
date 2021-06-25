@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './style.scss';
 
-class ProfileAvatar extends Component
+type Props = {
+    path: string,
+}
+
+class ProfileAvatar extends Component<Props>
 {
     render() {
         return (<div className="profile-avatar">
-            <img src="todo" alt="todo" />
+            <img src={this.props.path} alt="profile avatar" />
         </div>)
     }
 }

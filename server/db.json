@@ -92,5 +92,10 @@
             "type": "Corporate",
             "lastUpdated": "2021-06-21"
         }
-    ]
+    ],
+    "user": {
+        "profileImage": "img/avatar.png",
+        "fullName": "Michał Głuś",
+        "shortDescription": "Aspirujący Kapitan Gwiezdnej Floty"
+    }
 }

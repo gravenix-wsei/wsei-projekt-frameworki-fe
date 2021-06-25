@@ -4,6 +4,7 @@ import Card from '../../Common/Card';
 import { getDaysAgo } from '../../../utils/OtherHelpers';
 import './style.scss';
 import Arrow from './Arrow';
+import Icon from '../../Icon';
 
 type PropsType = {
      workspaces: Workspace[],
@@ -36,13 +37,14 @@ class Workspaces extends Component<PropsType>
                <div className="workspace-container-inner">
                     {workspaces && workspaces.length > 0 && workspaces.map((workspace :Workspace, index :number) => (
                          <Card className="workspace-item" key={index}>
-                              <img src="image.jpg" alt="workspace-item-background" />
-                              <img src="image.jpg" alt="workspace-item" />
-                              <h3>{workspace.title}</h3>
-                              {/* TODO use TextWithIcon component with proper class names */}
-                              <span>{workspace.type}</span>
-                              <span>{workspace.users} users</span>
-                              <span>Last update {getDaysAgo(workspace.lastUpdated)} days ago</span>
+                              <img className="background" src="img/work2.png" alt="workspace-item-background" />
+                              <img className="edit" src="img/edit.png" alt="workspace-item" />
+                              <div>
+                                   <h3>{workspace.title}</h3>
+                                   <span><Icon name="Network"/> {workspace.type}</span>
+                                   <span><Icon name="Entities"/> {workspace.users} users</span>
+                                   <span className="last-update">Last update {getDaysAgo(workspace.lastUpdated)} days ago</span>
+                              </div>
                          </Card>
                     ))}
                </div>
