@@ -1,7 +1,8 @@
 @import '../../../vars/global.scss';
 
 .card.workspace-item {
-    width: 30%;
+    flex: 0 0 24%;
+    width: 24%;
 }
 
 .workspaces {
