@@ -44,8 +44,14 @@ class Dropdown extends Component<DropdownProps, StateProps>
 
     onDropdownClick = (event :MouseEvent) => this.setState({dropdownVisible: !this.state.dropdownVisible})
 
+    onMouseLeave = (event :MouseEvent) => this.setState({dropdownVisible: false});
+
+    stopEvent = (event :MouseEvent) => event.stopPropagation();
+
     searchUpdate = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({search: e.target.value });
+        this.setState({
+            search: e.target.value 
+        });
     }
 
     renderList = () => this.filterOptions().map(
@@ -54,14 +60,14 @@ class Dropdown extends Component<DropdownProps, StateProps>
 
     render() {
         let {props, state} = this;
-        return (<div className="dropdown">
+        return (<div className="dropdown" onClick={this.onDropdownClick} onMouseLeave={this.onMouseLeave}>
             {this.props.withIcon && <Icon name={this.props.icon || ''} />}
-            <div onClick={this.onDropdownClick}>
+            <div>
                 {state.selectedOption === null ? '' : props.options[state.selectedOption].name}
             </div>
             {state.dropdownVisible &&
                 <div className="dropdown-list">
-                    <SearchBar onChange={this.searchUpdate} />
+                    <SearchBar onChange={this.searchUpdate} term={this.state.search} onClick={this.stopEvent} />
                     {this.renderList()}
                 </div>
             }
