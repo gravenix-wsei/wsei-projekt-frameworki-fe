@@ -96,7 +96,12 @@
     "user": {
         "profileImage": "img/avatar.png",
         "fullName": "Michał Głuś",
-        "shortDescription": "Aspirujący Kapitan Gwiezdnej Floty"
+        "shortDescription": "Aspirujący Kapitan Gwiezdnej Floty",
+        "birthDate": "1999-01-24",
+        "expertise": "Mergers and acquistions",
+        "specialties": "Cross border operation, Transaction over 500M$",
+        "admissions": "Paris bar association, Tunisian bar association",
+        "counties": "Tunisia"
     },
     "publications": [
         {

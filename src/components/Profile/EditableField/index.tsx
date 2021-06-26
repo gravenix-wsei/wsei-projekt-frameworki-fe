@@ -46,21 +46,32 @@ class EditableField extends Component<Props, State>
         switch (this.props.type) {
             case "textarea":
                 return <textarea value={this.state.newValue} onChange={this.onChange} />
+            case "date":
+                return <input type="date" value={this.state.newValue} onChange={this.onChange} />
             case "text":
             default:
                 return <input value={this.state.newValue} onChange={this.onChange} />
         }
     }
 
+    renderField() {
+        switch (this.props.type) {
+            case "multiselect-input":
+                return this.state.newValue.split(", ").map((item, key) => <span className="multiselect-item" key={key}>{item}</span>)
+            default:
+                return <span>{this.state.newValue}</span>;
+        }
+    }
+
     render () {
         let {editMode} = this.state;
-        return <div className={this.props.className || ''}>
+        return <div className={this.props.className || 'text-edit'}>
             {editMode ? <Fragment>
                 {this.renderEditField()}
                 <button onClick={this.acceptChanges}>Apply</button>
                 <button onClick={this.abortChanges}>cancel</button>
             </Fragment> : <Fragment>
-                <span>{this.state.newValue}</span>
+                {this.renderField()}
                 <button onClick={this.toggleEdit}>edit</button>
             </Fragment>
             }
