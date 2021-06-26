@@ -16,7 +16,7 @@ class DropdownItem extends Component<PropsType>
 
     private generateItem(): JSX.Element {
         return <div className="dropdown-item" onClick={this.onClick}>
-            <Icon name={this.props.icon} />
+            <Icon className="icon-xl" name={this.props.icon} />
             <span>{this.props.name}</span>
         </div>
     }

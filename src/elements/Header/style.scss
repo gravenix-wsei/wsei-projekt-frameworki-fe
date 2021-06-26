@@ -8,6 +8,10 @@ header.navbar {
     padding: 0 $margin-small;
     box-shadow: 0 $margin-small/2 $margin-small $secondary-color;
     height: $navbar-height;
+    .icon-logout {
+        display: inline-block;
+        float: none;
+    }
     div.logo {
         width: $navbar-height;
     }

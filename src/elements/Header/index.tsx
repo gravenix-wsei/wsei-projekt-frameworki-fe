@@ -53,6 +53,26 @@ class Main extends Component<{}, State> {
             icon: "Network",
             to: "/user",
             hidden: true,
+        },
+        {
+            id: 7,
+            name: "Client contracts",
+            icon: "Edit",
+        },
+        {
+            id: 8,
+            name: "Supplier contracts",
+            icon: "Edit",
+        },
+        {
+            id: 9,
+            name: "Corporate",
+            icon: "Corporate",
+        },
+        {
+            id: 10,
+            name: "Real estate contracts",
+            icon: "Edit",
         }
     ]
 
@@ -66,7 +86,9 @@ class Main extends Component<{}, State> {
             onClick={this.onPageChange}
         />
         <hr/>
-        <div className="logout">Logout</div>
+        <div className="logout">
+            Logout <Icon className="icon-logout" name="Logout" />
+        </div>
     </div>)
 
     onPageChange = (id :number) => {
@@ -96,9 +118,9 @@ class Main extends Component<{}, State> {
                     <SearchBar />
                 </div>
                 <div className="right-header">
-                    <Icon name="Home" />
-                    <Icon name="Messages" />
-                    <Icon name="Notifications" />
+                    <Icon name="Home" className="icon-xl" />
+                    <Icon name="Messages" className="icon-xl" />
+                    <Icon name="Notifications" className="icon-xl" />
                 </div>
             </header>
         );

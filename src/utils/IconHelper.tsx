@@ -23,12 +23,20 @@ function getFilename(iconName :string) {
             return 'ecosystem.svg';
         case 'Entities':
             return 'entities.svg';
+        case "Corporate":
+            return 'entities2.svg';
+        case "Edit":
+            return "edit.svg";
         case 'Search':
             return 'search.svg';
         case 'User':
             return 'people.svg';
         case 'Administration':
             return 'administration.svg';
+        case "Logout":
+            return 'logout.svg';
+        case "ArrowDown":
+            return 'arrow-down.svg';
     }
 }
 

@@ -1,3 +1,9 @@
 .icon {
     margin: 2px;
+    width: 1em;
+    height: 1em;
+    &.icon-xl {
+        width: 1.5em;
+        height: 1.5em;
+    }
 }

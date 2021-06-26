@@ -1,4 +1,5 @@
 import React, { Component, MouseEvent } from 'react';
+import Icon from '../Icon';
 import SearchBar from '../SearchBar';
 import DropdownItem from './DropdownItem';
 import './style.scss';
@@ -97,11 +98,17 @@ class Dropdown extends Component<DropdownProps, StateProps>
                     id={selectedOption.id}
                     icon={selectedOption.icon ?? ''}
                 />}
+                <Icon 
+                    name="ArrowDown" 
+                    className={"icon-dropdown" + (state.dropdownVisible ? ' revert' : '')} 
+                />
             </div>
             {state.dropdownVisible &&
                 <div className="dropdown-list">
                     <SearchBar onChange={this.searchUpdate} term={this.state.search} onClick={this.stopEvent} />
-                    {this.renderList()}
+                    <div className="dropdown-list-inner">
+                        {this.renderList()}
+                    </div>
                     {props.appendBottom && props.appendBottom}
                 </div>
             }

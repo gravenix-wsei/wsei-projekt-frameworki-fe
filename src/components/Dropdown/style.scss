@@ -16,6 +16,16 @@ div.dropdown {
     img {
         float: left;
     }
+    div.dropdown-current .icon-dropdown{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s ease-in-out;
+        right: 0;
+        &.revert {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
     div.dropdown-item {
         cursor: pointer;
         & > span {
@@ -28,6 +38,10 @@ div.dropdown {
         position: absolute;
         top: 100%;
         width: 100%;
+        & > div.dropdown-list-inner {
+            max-height: 200px;
+            overflow-y: auto;
+        }
         display: flex;
         flex-direction: column;
         border: 1px solid $secondary-color;
