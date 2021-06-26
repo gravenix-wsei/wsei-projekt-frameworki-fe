@@ -6,6 +6,7 @@ import Page from './elements/Page';
 import './App.css';
 import './app-style.scss'
 import UserInfo from './elements/UserInfo';
+import Entities from './elements/Entities';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route path="/user">
             <UserInfo />
+          </Route>
+          <Route path="/entities">
+            <Entities />
           </Route>
           <Route path="/">
             <LeftPanel />

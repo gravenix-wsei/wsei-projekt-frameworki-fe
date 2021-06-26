@@ -41,6 +41,7 @@ class Main extends Component<{}, State> {
             id: 4,
             name: "Entities",
             icon: "Entities",
+            to: "/entities",
         }, 
         {
             id: 5,

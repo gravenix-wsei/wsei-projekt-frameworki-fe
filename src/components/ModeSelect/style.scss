@@ -1,0 +1,20 @@
+@import '../../vars/global.scss';
+
+div.mode-select {
+    display: inline-block;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    & > div {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 3px;
+        &.selected {
+            background-color: rgb(83, 208, 240);
+        }
+        &:first-of-type {
+            border-right: 1px solid $secondary-color;
+        }
+    }
+}

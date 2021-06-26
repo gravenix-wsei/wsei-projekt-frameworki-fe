@@ -8,6 +8,7 @@ import ProfileFullname from '../../components/Profile/ProfileFullname';
 import ProfileShortDesc from '../../components/Profile/ProfileShortDesc';
 import User from '../../commonTypes/User';
 import { getUser } from '../../utils/ApiHelper';
+import {Link as LinkRouter} from 'react-router-dom';
 
 type State = {
     user: User|null
@@ -53,9 +54,9 @@ class LeftPanel extends Component<{}, State> {
             <Link to="where">
                 <TextWithIcon icon="Ecosystem">Ecosystem</TextWithIcon>
             </Link>
-            <Link to="where">
+            <LinkRouter to="/entities">
                 <TextWithIcon icon="Entities">Entities</TextWithIcon>
-            </Link>
+            </LinkRouter>
         </section>);
     }
 }

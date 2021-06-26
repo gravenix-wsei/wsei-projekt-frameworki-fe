@@ -37,6 +37,12 @@ function getFilename(iconName :string) {
             return 'logout.svg';
         case "ArrowDown":
             return 'arrow-down.svg';
+        case "Settings":
+            return "cog.svg";
+        case "Grid": 
+            return "grid.svg";
+        case "List": 
+            return "list.svg";
     }
 }
 

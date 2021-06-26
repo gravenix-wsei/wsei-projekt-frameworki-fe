@@ -21,9 +21,12 @@ const getUser = () => handleRequest(axios.get(buildUrl('user')));
 
 const getPublications = () => handleRequest(axios.get(buildUrl('publications')));
 
+const getEntities = () => handleRequest(axios.get(buildUrl('entities')));
+
 export {
     getWorkspaces,
     getYourWork,
     getUser,
     getPublications,
+    getEntities,
 }

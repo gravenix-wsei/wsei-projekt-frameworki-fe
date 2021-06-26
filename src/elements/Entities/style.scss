@@ -1,0 +1,59 @@
+@import '../../vars/global.scss';
+
+div.content > main.entities {
+    width: 80%;
+    flex: 0 0 80%;
+    margin: auto;
+    position: relative;
+    div.entities-header {
+        position: relative;
+        & > h2 {
+            color: $secondary-color-dark;
+            width: auto;
+            display: inline-block;
+        }
+        & > .icon-inline {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .align-right {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    div.entities-container {
+        display: flex;
+        justify-content: flex-start;
+        .entities-item {
+            padding: 0;
+            overflow: hidden;
+            &-list {
+                flex: 0 0 100%;
+            }
+            &-grid {
+                flex: 0 0 22%;
+            }
+            & > img {
+                height: 70px;
+                float: left;
+            }
+            & > h3 {
+                font-size: 80%;
+                margin: 2px 0;
+            }
+            & > span {
+                font-size: 50%;
+                line-height: .5em;
+            }
+        }
+        &-grid {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &-list {
+            flex-direction: column;
+        }
+    }
+}

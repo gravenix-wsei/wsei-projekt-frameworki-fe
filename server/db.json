@@ -125,5 +125,132 @@
             "author": "John Doe",
             "image": "img/work.png"
         }
+    ],
+    "entities": [
+        {
+            "name": "ABC generic company",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        },
+        {
+            "name": "Subsid Corp Ltd",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo1.png"
+        },
+        {
+            "name": "World company SAS",
+            "info": "Caracass 1050, Distrito Capital, Venezuela",
+            "image": "logo2.png"
+        }
     ]
 }
