@@ -1,0 +1,19 @@
+@import '../../../vars/global.scss';
+
+.card.card-user-basic-information {
+    div.profile-avatar {
+        width: auto;
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        box-sizing: content-box;
+    }
+    div.profile-data {
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.text-edit {
+        display: block;
+        color: black;
+        margin-top: 10px;
+    }
+}

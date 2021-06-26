@@ -1,0 +1,8 @@
+@import '../../vars/global.scss';
+
+div.content > main.user-info {
+    flex: none;
+    width: 70%;
+    margin: auto;
+    color: $secondary-color-dark;
+}

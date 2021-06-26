@@ -1,0 +1,11 @@
+@import '../../../vars/global.scss';
+
+.text-edit {
+    input {
+        width: 320px;
+    }
+    textarea {
+        width: 320px;
+        height: 150px;
+    }
+}

@@ -14,6 +14,11 @@ header.navbar {
     div.navbar-dropdown {
         flex-grow: 2;
         margin: auto;
+        div.logout {
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
     }
     div.searchbar {
         flex-grow: 6;

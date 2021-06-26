@@ -27,6 +27,8 @@ function getFilename(iconName :string) {
             return 'search.svg';
         case 'User':
             return 'people.svg';
+        case 'Administration':
+            return 'administration.svg';
     }
 }
 
